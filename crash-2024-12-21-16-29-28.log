@@ -1,0 +1,1575 @@
+Skyrim SSE v1.6.1170
+CrashLoggerSSE v1-15-0-0 Oct 12 2024 11:33:37
+
+Unhandled exception "EXCEPTION_ACCESS_VIOLATION" at 0x7FF6AD65C9C8 SkyrimSE.exe+0CEC9C8	mov eax, [rax-0x08]
+Exception Flags: 0x00000000
+Number of Parameters: 2
+Access Violation: Tried to read memory at 0xFFFFFFFFFFFFFFFF
+
+SYSTEM SPECS:
+	OS: Microsoft Windows 11 Home v10.0.26100
+	CPU: AuthenticAMD AMD Ryzen 7 5700U with Radeon Graphics         
+	GPU #1: AMD Lucienne
+	GPU #2: Microsoft Basic Render Driver
+	PHYSICAL MEMORY: 13.14 GB/23.89 GB
+	GPU MEMORY: 1.85/19.18 GB
+
+PROBABLE CALL STACK:
+	[ 0] 0x7FF6AD65C9C8 SkyrimSE.exe+0CEC9C8 -> 69173+0x8	mov eax, [rax-0x08]
+	[ 1] 0x7FF6ACDA2375 SkyrimSE.exe+0432375 -> 26986+0xF5	test eax, eax
+	[ 2] 0x7FF6ACD2CCE1 SkyrimSE.exe+03BCCE1 -> 24732+0xF1	mov rax, [rbx]
+	[ 3] 0x7FF6ACB036DF SkyrimSE.exe+01936DF -> 13110+0x9F	mov rax, [rbx]
+	[ 4] 0x7FF6ACB0362C SkyrimSE.exe+019362C -> 13109+0x4C	nop
+	[ 5] 0x7FF6ACB10A99 SkyrimSE.exe+01A0A99 -> 13355+0x179	test rbx, rbx
+	[ 6] 0x7FF6ACAFE920 SkyrimSE.exe+018E920 -> 13023+0x1B0	mov rcx, [rbx+0x60]
+	[ 7] 0x7FF6AD7715CF SkyrimSE.exe+0E015CF -> 75705+0xEF	jmp 0x00007FF6AD7715FA
+	[ 8] 0x7FF6AD7719E4 SkyrimSE.exe+0E019E4 -> 75708+0x1E4	mov rcx, [rdi+0xE0]
+	[ 9] 0x7FF6AD0BC2CB SkyrimSE.exe+074C2CB -> 40744+0x1FB	mov rcx, rbx
+	[10] 0x7FF6AD0BCC28 SkyrimSE.exe+074CC28 -> 40745+0x398	mov rbx, [rsp+0xB0]
+	[11] 0x7FF6AD0A0C36 SkyrimSE.exe+0730C36 -> 40438+0x746	mov rdx, rdi
+	[12] 0x7FF6ACFB5F13 SkyrimSE.exe+0645F13 -> 36564+0x73	call 0x00007FF6ACFB9D40
+	[13] 0x7FF6ACFAEAD5 SkyrimSE.exe+063EAD5 -> 36544+0x165	test bl, bl
+	[14] 0x7FF6ADEABB8E SkyrimSE.exe+153BB8E -> 109636+0x106	mov ebx, eax
+	[15] 0x7FF89347E8D7 KERNEL32.DLL+002E8D7
+	[16] 0x7FF8948BFBCC    ntdll.dll+00DFBCC
+
+REGISTERS:
+	RAX 0x38D8702CF6FA7501 (size_t) [4096147199517947137]
+	RCX 0x23A892776E0      (void*)
+	RDX 0x7FF6AFAAF9B0     (void* -> SkyrimSE.exe+313F9B0	sbb dh, dl)
+	RBX 0x23A892776E0      (void*)
+	RSP 0xD32137F368       (void*)
+	RBP 0x23A89291F40      (BSDismemberSkinInstance*)
+	RSI 0x40               (size_t) [64]
+	RDI 0x8                (size_t) [8]
+	R8  0x7B               (size_t) [123]
+	R9  0x4369E9           (size_t) [4418025]
+	R10 0x48726EB4         (size_t) [1215458996]
+	R11 0xD32137F2E0       (void*)
+	R12 0x23A81E845E8      (void*)
+	R13 0x23A89285380      (BSDynamicTriShape*)
+		Name: "HairMaleNord01"
+		RTTIName: "BSDynamicTriShape"
+		ExtraData[0] Name: "FOD"
+		ExtraData[1] Name: "FMD"
+		Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking Parent: 0
+			Name: "BSFaceGenNiNodeSkinned"
+			RTTIName: "BSFaceGenNiNode"
+			Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+			Full Name: "Adventurer"
+			Checking User Data: -----
+				Object Reference: 
+				File: "Skyrim Unbound - Female by Default.esp"
+				Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+				Flags: 0x00040009 kDestructible | kInitialized
+				Name: "Adventurer"
+				FormID: 0x00000007
+				FormType: NPC (43)
+				ParentCell: ---
+					File: "unofficial skyrim special edition patch.esp"
+					Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+					Flags: 0x00040009 
+					EditorID: "HelgenExterior07"
+					FormID: 0x0000984A
+					FormType: Cell (60)
+			Checking TESObjectREFR: {}
+				Object Reference: 
+				File: "Skyrim Unbound - Female by Default.esp"
+				Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+				Flags: 0x00040009 kDestructible | kInitialized
+				Name: "Adventurer"
+				FormID: 0x00000007
+				FormType: NPC (43)
+				ParentCell: ---
+					File: "unofficial skyrim special edition patch.esp"
+					Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+					Flags: 0x00040009 
+					EditorID: "HelgenExterior07"
+					FormID: 0x0000984A
+					FormType: Cell (60)
+			Checking Parent: 6
+				Name: "skeleton_female.nif"
+				RTTIName: "BSFadeNode"
+				ExtraData[0] Name: "BOM"
+				ExtraData[1] Name: "BBX"
+				ExtraData[2] Name: "BSX"
+				ExtraData[3] Name: "BSBoneLOD"
+				ExtraData[4] Name: "SkeletonID"
+				Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+				Full Name: "Adventurer"
+				Checking User Data: -----
+					Object Reference: 
+					File: "Skyrim Unbound - Female by Default.esp"
+					Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+					Flags: 0x00040009 kDestructible | kInitialized
+					Name: "Adventurer"
+					FormID: 0x00000007
+					FormType: NPC (43)
+					ParentCell: ---
+						File: "unofficial skyrim special edition patch.esp"
+						Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+						Flags: 0x00040009 
+						EditorID: "HelgenExterior07"
+						FormID: 0x0000984A
+						FormType: Cell (60)
+				Checking TESObjectREFR: {}
+					Object Reference: 
+					File: "Skyrim Unbound - Female by Default.esp"
+					Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+					Flags: 0x00040009 kDestructible | kInitialized
+					Name: "Adventurer"
+					FormID: 0x00000007
+					FormType: NPC (43)
+					ParentCell: ---
+						File: "unofficial skyrim special edition patch.esp"
+						Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+						Flags: 0x00040009 
+						EditorID: "HelgenExterior07"
+						FormID: 0x0000984A
+						FormType: Cell (60)
+		Name: "HairMaleNord01"
+	R14 0x23A89266D70      (BSFadeNode*)
+		Name: "skeleton_female.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BOM"
+		ExtraData[1] Name: "BBX"
+		ExtraData[2] Name: "BSX"
+		ExtraData[3] Name: "BSBoneLOD"
+		ExtraData[4] Name: "SkeletonID"
+		Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Name: "skeleton_female.nif"
+	R15 0x9                (size_t) [9]
+
+STACK:
+	[RSP+0  ] 0x7FF6ACDA2375     (void* -> SkyrimSE.exe+0432375	test eax, eax)
+	[RSP+8  ] 0x23A892776D8      (void*)
+	[RSP+10 ] 0x23A89291F40      (BSDismemberSkinInstance*)
+	[RSP+18 ] 0x7FF6AFBE2E98     (void* -> SkyrimSE.exe+3272E98	add [rax], al)
+	[RSP+20 ] 0x40               (size_t) [64]
+	[RSP+28 ] 0x23A8923D4F0      (QueuedHead*)
+	[RSP+30 ] 0x23B58EA8350      (TESNPC*)
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		GetFullName: "Adventurer"
+	[RSP+38 ] 0x23AC14790C8      (char*) "Q"
+	[RSP+40 ] 0x23A89266D70      (BSFadeNode*)
+		Name: "skeleton_female.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BOM"
+		ExtraData[1] Name: "BBX"
+		ExtraData[2] Name: "BSX"
+		ExtraData[3] Name: "BSBoneLOD"
+		ExtraData[4] Name: "SkeletonID"
+		Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Name: "skeleton_female.nif"
+	[RSP+48 ] 0x23A89266D70      (BSFadeNode*)
+		Name: "skeleton_female.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BOM"
+		ExtraData[1] Name: "BBX"
+		ExtraData[2] Name: "BSX"
+		ExtraData[3] Name: "BSBoneLOD"
+		ExtraData[4] Name: "SkeletonID"
+		Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Name: "skeleton_female.nif"
+	[RSP+50 ] 0x23B58EA8350      (TESNPC*)
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		GetFullName: "Adventurer"
+	[RSP+58 ] 0x23A8923D530      (void*)
+	[RSP+60 ] 0x7FF6ACD2CCE1     (void* -> SkyrimSE.exe+03BCCE1	mov rax, [rbx])
+	[RSP+68 ] 0x23A89211680      (BSFaceGenNiNode*)
+		Name: "BSFaceGenNiNodeSkinned"
+		RTTIName: "BSFaceGenNiNode"
+		Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking Parent: 6
+			Name: "skeleton_female.nif"
+			RTTIName: "BSFadeNode"
+			ExtraData[0] Name: "BOM"
+			ExtraData[1] Name: "BBX"
+			ExtraData[2] Name: "BSX"
+			ExtraData[3] Name: "BSBoneLOD"
+			ExtraData[4] Name: "SkeletonID"
+			Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+			Full Name: "Adventurer"
+			Checking User Data: -----
+				Object Reference: 
+				File: "Skyrim Unbound - Female by Default.esp"
+				Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+				Flags: 0x00040009 kDestructible | kInitialized
+				Name: "Adventurer"
+				FormID: 0x00000007
+				FormType: NPC (43)
+				ParentCell: ---
+					File: "unofficial skyrim special edition patch.esp"
+					Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+					Flags: 0x00040009 
+					EditorID: "HelgenExterior07"
+					FormID: 0x0000984A
+					FormType: Cell (60)
+			Checking TESObjectREFR: {}
+				Object Reference: 
+				File: "Skyrim Unbound - Female by Default.esp"
+				Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+				Flags: 0x00040009 kDestructible | kInitialized
+				Name: "Adventurer"
+				FormID: 0x00000007
+				FormType: NPC (43)
+				ParentCell: ---
+					File: "unofficial skyrim special edition patch.esp"
+					Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+					Flags: 0x00040009 
+					EditorID: "HelgenExterior07"
+					FormID: 0x0000984A
+					FormType: Cell (60)
+		Name: "BSFaceGenNiNodeSkinned"
+	[RSP+70 ] 0x23A00000000      (size_t) [2448131358720]
+	[RSP+78 ] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+80 ] 0x23A89211680      (BSFaceGenNiNode*)
+		Name: "BSFaceGenNiNodeSkinned"
+		RTTIName: "BSFaceGenNiNode"
+		Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking Parent: 6
+			Name: "skeleton_female.nif"
+			RTTIName: "BSFadeNode"
+			ExtraData[0] Name: "BOM"
+			ExtraData[1] Name: "BBX"
+			ExtraData[2] Name: "BSX"
+			ExtraData[3] Name: "BSBoneLOD"
+			ExtraData[4] Name: "SkeletonID"
+			Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+			Full Name: "Adventurer"
+			Checking User Data: -----
+				Object Reference: 
+				File: "Skyrim Unbound - Female by Default.esp"
+				Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+				Flags: 0x00040009 kDestructible | kInitialized
+				Name: "Adventurer"
+				FormID: 0x00000007
+				FormType: NPC (43)
+				ParentCell: ---
+					File: "unofficial skyrim special edition patch.esp"
+					Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+					Flags: 0x00040009 
+					EditorID: "HelgenExterior07"
+					FormID: 0x0000984A
+					FormType: Cell (60)
+			Checking TESObjectREFR: {}
+				Object Reference: 
+				File: "Skyrim Unbound - Female by Default.esp"
+				Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+				Flags: 0x00040009 kDestructible | kInitialized
+				Name: "Adventurer"
+				FormID: 0x00000007
+				FormType: NPC (43)
+				ParentCell: ---
+					File: "unofficial skyrim special edition patch.esp"
+					Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+					Flags: 0x00040009 
+					EditorID: "HelgenExterior07"
+					FormID: 0x0000984A
+					FormType: Cell (60)
+		Name: "BSFaceGenNiNodeSkinned"
+	[RSP+88 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+90 ] 0x0                (size_t) [0]
+	[RSP+98 ] 0x23A89266EC8      (BSFadeNode*)
+		Name: "skeleton.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BSBoneLOD"
+		ExtraData[1] Name: "SkeletonID"
+		Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Name: "skeleton.nif"
+	[RSP+A0 ] 0x7FF6AD0CCB97     (void* -> SkyrimSE.exe+075CB97	test rsi, rsi)
+	[RSP+A8 ] 0x0                (size_t) [0]
+	[RSP+B0 ] 0x23ACCBF3940      (QueuedPlayer*)
+	[RSP+B8 ] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+C0 ] 0x7FF6ACB036DF     (void* -> SkyrimSE.exe+01936DF	mov rax, [rbx])
+	[RSP+C8 ] 0x0                (size_t) [0]
+	[RSP+D0 ] 0x69               (size_t) [105]
+	[RSP+D8 ] 0x23ACCBF3940      (QueuedPlayer*)
+	[RSP+E0 ] 0x7FF6AD0A4E9D     (void* -> SkyrimSE.exe+0734E9D	nop)
+	[RSP+E8 ] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+F0 ] 0x23A89266EC8      (BSFadeNode*)
+		Name: "skeleton.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BSBoneLOD"
+		ExtraData[1] Name: "SkeletonID"
+		Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Name: "skeleton.nif"
+	[RSP+F8 ] 0xD32137F4B0       (void*)
+	[RSP+100] 0x2B               (size_t) [43]
+	[RSP+108] 0x23ACCBF3940      (QueuedPlayer*)
+	[RSP+110] 0x30D40            (size_t) [200000]
+	[RSP+118] 0x4BD10928F24      (size_t) [5210073370404]
+	[RSP+120] 0x23AC14790C8      (char*) "Q"
+	[RSP+128] 0x0                (size_t) [0]
+	[RSP+130] 0x23A870943D8      (TESObjectCELL*)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+	[RSP+138] 0x69               (size_t) [105]
+	[RSP+140] 0x7FF6ACB0362C     (void* -> SkyrimSE.exe+019362C	nop)
+	[RSP+148] 0x100000           (size_t) [1048576]
+	[RSP+150] 0x23A00000069      (size_t) [2448131358825]
+	[RSP+158] 0x30D40            (size_t) [200000]
+	[RSP+160] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+168] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+170] 0x0                (size_t) [0]
+	[RSP+178] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+180] 0x7FF6ACB10A99     (void* -> SkyrimSE.exe+01A0A99	test rbx, rbx)
+	[RSP+188] 0xFFFFFFFF00000069 (size_t) [uint: 18446744069414584425 int: -4294967191]
+	[RSP+190] 0x23A89266D70      (BSFadeNode*)
+		Name: "skeleton_female.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BOM"
+		ExtraData[1] Name: "BBX"
+		ExtraData[2] Name: "BSX"
+		ExtraData[3] Name: "BSBoneLOD"
+		ExtraData[4] Name: "SkeletonID"
+		Flags: kHidden | kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Full Name: "Adventurer"
+		Checking User Data: -----
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Checking TESObjectREFR: {}
+			Object Reference: 
+			File: "Skyrim Unbound - Female by Default.esp"
+			Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+			Flags: 0x00040009 kDestructible | kInitialized
+			Name: "Adventurer"
+			FormID: 0x00000007
+			FormType: NPC (43)
+			ParentCell: ---
+				File: "unofficial skyrim special edition patch.esp"
+				Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+				Flags: 0x00040009 
+				EditorID: "HelgenExterior07"
+				FormID: 0x0000984A
+				FormType: Cell (60)
+		Name: "skeleton_female.nif"
+	[RSP+198] 0x23A00000069      (size_t) [2448131358825]
+	[RSP+1A0] 0x23AD524AC20      (void*)
+	[RSP+1A8] 0x23ACBC2AB70      (void*)
+	[RSP+1B0] 0x23ACCBF3940      (QueuedPlayer*)
+	[RSP+1B8] 0x7FF6AEA6AB60     (void* -> SkyrimSE.exe+20FAB60	add [rax], al)
+	[RSP+1C0] 0x7FF6ACAFE920     (void* -> SkyrimSE.exe+018E920	mov rcx, [rbx+0x60])
+	[RSP+1C8] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+1D0] 0x7FF6AEA6AB00     (void* -> SkyrimSE.exe+20FAB00	add [rax], al)
+	[RSP+1D8] 0x23A880FBAE0      (BSFadeNode*)
+		Name: "skeleton_female.nif"
+		RTTIName: "BSFadeNode"
+		ExtraData[0] Name: "BBX"
+		ExtraData[1] Name: "BSX"
+		ExtraData[2] Name: "BSBoneLOD"
+		ExtraData[3] Name: "SkeletonID"
+		Flags: kSelectiveUpdate | kSelectiveUpdateTransforms | kSelectiveUpdateController
+		Name: "skeleton_female.nif"
+	[RSP+1E0] 0x23AC14790C8      (char*) "Q"
+	[RSP+1E8] 0x23A814FCF00      (SynchronizedQueue<NiPointer<IOTask> >*)
+	[RSP+1F0] 0x0                (size_t) [0]
+	[RSP+1F8] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+200] 0xD32137F5D0       (void*)
+	[RSP+208] 0x23A87E07AD0      (void*)
+	[RSP+210] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+218] 0x23A814B35F8      (IOManager*)
+	[RSP+220] 0x23AC1478960      (void*)
+	[RSP+228] 0x768              (size_t) [1896]
+	[RSP+230] 0x0                (size_t) [0]
+	[RSP+238] 0x23ACCBF3940      (QueuedPlayer*)
+	[RSP+240] 0x7FF6AD7715CF     (void* -> SkyrimSE.exe+0E015CF	jmp 0x00007FF6AD7715FA)
+	[RSP+248] 0x23A00100000      (size_t) [2448132407296]
+	[RSP+250] 0x14               (size_t) [20]
+	[RSP+258] 0xC                (size_t) [12]
+	[RSP+260] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+268] 0x23ACCBF3940      (QueuedPlayer*)
+	[RSP+270] 0x23AC1478960      (void*)
+	[RSP+278] 0x0                (size_t) [0]
+	[RSP+280] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+288] 0x7D               (size_t) [125]
+	[RSP+290] 0x0                (size_t) [0]
+	[RSP+298] 0x0                (size_t) [0]
+	[RSP+2A0] 0x17               (size_t) [23]
+	[RSP+2A8] 0x23A814B35F8      (IOManager*)
+	[RSP+2B0] 0x0                (size_t) [0]
+	[RSP+2B8] 0x1                (size_t) [1]
+	[RSP+2C0] 0x7FF6AD7719E4     (void* -> SkyrimSE.exe+0E019E4	mov rcx, [rdi+0xE0])
+	[RSP+2C8] 0x1                (size_t) [1]
+	[RSP+2D0] 0xD300000001       (size_t) [906238099457]
+	[RSP+2D8] 0xFFFFFFFF00000069 (size_t) [uint: 18446744069414584425 int: -4294967191]
+	[RSP+2E0] 0x23A8923CA00      (void*)
+	[RSP+2E8] 0x0                (size_t) [0]
+	[RSP+2F0] 0x0                (size_t) [0]
+	[RSP+2F8] 0xD32137F818       (void*)
+	[RSP+300] 0xD32137F808       (void*)
+	[RSP+308] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+310] 0x0                (size_t) [0]
+	[RSP+318] 0x23A870943D8      (TESObjectCELL*)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+	[RSP+320] 0x7FF6AD0BC2CB     (void* -> SkyrimSE.exe+074C2CB	mov rcx, rbx)
+	[RSP+328] 0x23A00000001      (size_t) [2448131358721]
+	[RSP+330] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+338] 0xD32137F790       (void*)
+	[RSP+340] 0x23A870943D8      (TESObjectCELL*)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+	[RSP+348] 0xFFFFFFFF0000006A (size_t) [uint: 18446744069414584426 int: -4294967190]
+	[RSP+350] 0xD32137F6A0       (void*)
+	[RSP+358] 0xD32137F6B8       (void*)
+	[RSP+360] 0x23AC14790C8      (char*) "Q"
+	[RSP+368] 0x23A84052000      (BGSLocation*)
+		File: "Skyrim.esm"
+		Flags: 0x00000009 kDestructible | kInitialized
+		Name: "Helgen"
+		FormID: 0x00018A4A
+		FormType: Location (104)
+		GetFullName: "Helgen"
+	[RSP+370] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+378] 0x23A0000006B      (size_t) [2448131358827]
+	[RSP+380] 0x23A878DC790      (BSShaderTextureSet*)
+	[RSP+388] 0x23B58EA7D90      (TESWorldSpace*)
+		File: "Skyrim Unbound.esp"
+		Modified by: Skyrim.esm -> Update.esm -> Dawnguard.esm -> HearthFires.esm -> Dragonborn.esm -> ccbgssse001-fish.esm -> ccbgssse003-zombies.esl -> ccbgssse005-goldbrand.esl -> ccbgssse007-chrysamere.esl -> ccbgssse021-lordsmail.esl -> ccmtysse001-knightsofthenine.esl -> cctwbsse001-puzzledungeon.esm -> cceejsse001-hstead.esm -> ccqdrsse002-firewood.esl -> ccbgssse018-shadowrend.esl -> cceejsse002-tower.esl -> ccvsvsse002-pets.esl -> ccbgssse034-mntuni.esl -> ccbgssse045-hasedoki.esl -> ccbgssse008-wraithguard.esl -> ccbgssse036-petbwolf.esl -> ccffbsse001-imperialdragon.esl -> ccmtysse002-ve.esl -> ccbgssse043-crosselv.esl -> ccvsvsse001-winter.esl -> cceejsse003-hollow.esl -> ccbgssse016-umbra.esm -> ccbgssse031-advcyrus.esm -> ccbgssse038-bowofshadows.esl -> ccbgssse040-advobgobs.esl -> ccbgssse050-ba_daedric.esl -> ccbgssse052-ba_iron.esl -> ccbgssse058-ba_steel.esl -> ccbgssse059-ba_dragonplate.esl -> ccbgssse061-ba_dwarven.esl -> ccpewsse002-armsofchaos.esl -> ccedhsse002-splkntset.esl -> ccbgssse064-ba_elven.esl -> ccbgssse063-ba_ebony.esl -> ccbgssse062-ba_dwarvenmail.esl -> ccbgssse060-ba_dragonscale.esl -> ccbgssse056-ba_silver.esl -> ccbgssse053-ba_leather.esl -> ccbgssse051-ba_daedricmail.esl -> ccbgssse067-daedinv.esm -> ccvsvsse003-necroarts.esl -> ccvsvsse004-beafarmer.esl -> ccbgssse025-advdsgs.esm -> ccrmssse001-necrohouse.esl -> ccedhsse003-redguard.esl -> cceejsse004-hall.esl -> cceejsse005-cave.esm -> cckrtsse001_altar.esl -> ccafdsse001-dwesanctuary.esm -> unofficial skyrim special edition patch.esp -> waccf_armor and clothing extension.esp -> Wintersun - Faiths of Skyrim.esp -> Immersive Patrols II.esp -> the paarthurnax dilemma.esp -> Immersive Citizens - AI Overhaul.esp -> TheChoiceIsYours.esp -> Skyrim Unbound.esp
+		Flags: 0x0000000B kDestructible | kAltered | kInitialized
+		Name: "Skyrim"
+		EditorID: "Tamriel"
+		FormID: 0x0000003C
+		FormType: WorldSpace (71)
+		GetFullName: "Skyrim"
+	[RSP+390] 0x23B58EA7D90      (TESWorldSpace*)
+		File: "Skyrim Unbound.esp"
+		Modified by: Skyrim.esm -> Update.esm -> Dawnguard.esm -> HearthFires.esm -> Dragonborn.esm -> ccbgssse001-fish.esm -> ccbgssse003-zombies.esl -> ccbgssse005-goldbrand.esl -> ccbgssse007-chrysamere.esl -> ccbgssse021-lordsmail.esl -> ccmtysse001-knightsofthenine.esl -> cctwbsse001-puzzledungeon.esm -> cceejsse001-hstead.esm -> ccqdrsse002-firewood.esl -> ccbgssse018-shadowrend.esl -> cceejsse002-tower.esl -> ccvsvsse002-pets.esl -> ccbgssse034-mntuni.esl -> ccbgssse045-hasedoki.esl -> ccbgssse008-wraithguard.esl -> ccbgssse036-petbwolf.esl -> ccffbsse001-imperialdragon.esl -> ccmtysse002-ve.esl -> ccbgssse043-crosselv.esl -> ccvsvsse001-winter.esl -> cceejsse003-hollow.esl -> ccbgssse016-umbra.esm -> ccbgssse031-advcyrus.esm -> ccbgssse038-bowofshadows.esl -> ccbgssse040-advobgobs.esl -> ccbgssse050-ba_daedric.esl -> ccbgssse052-ba_iron.esl -> ccbgssse058-ba_steel.esl -> ccbgssse059-ba_dragonplate.esl -> ccbgssse061-ba_dwarven.esl -> ccpewsse002-armsofchaos.esl -> ccedhsse002-splkntset.esl -> ccbgssse064-ba_elven.esl -> ccbgssse063-ba_ebony.esl -> ccbgssse062-ba_dwarvenmail.esl -> ccbgssse060-ba_dragonscale.esl -> ccbgssse056-ba_silver.esl -> ccbgssse053-ba_leather.esl -> ccbgssse051-ba_daedricmail.esl -> ccbgssse067-daedinv.esm -> ccvsvsse003-necroarts.esl -> ccvsvsse004-beafarmer.esl -> ccbgssse025-advdsgs.esm -> ccrmssse001-necrohouse.esl -> ccedhsse003-redguard.esl -> cceejsse004-hall.esl -> cceejsse005-cave.esm -> cckrtsse001_altar.esl -> ccafdsse001-dwesanctuary.esm -> unofficial skyrim special edition patch.esp -> waccf_armor and clothing extension.esp -> Wintersun - Faiths of Skyrim.esp -> Immersive Patrols II.esp -> the paarthurnax dilemma.esp -> Immersive Citizens - AI Overhaul.esp -> TheChoiceIsYours.esp -> Skyrim Unbound.esp
+		Flags: 0x0000000B kDestructible | kAltered | kInitialized
+		Name: "Skyrim"
+		EditorID: "Tamriel"
+		FormID: 0x0000003C
+		FormType: WorldSpace (71)
+		GetFullName: "Skyrim"
+	[RSP+398] 0x0                (size_t) [0]
+	[RSP+3A0] 0x0                (size_t) [0]
+	[RSP+3A8] 0x0                (size_t) [0]
+	[RSP+3B0] 0x0                (size_t) [0]
+	[RSP+3B8] 0x3E               (size_t) [62]
+	[RSP+3C0] 0x7FF6ACC76CA9     (void* -> SkyrimSE.exe+0306CA9	nop)
+	[RSP+3C8] 0x69               (size_t) [105]
+	[RSP+3D0] 0x23A878DC700      (void*)
+	[RSP+3D8] 0x0                (size_t) [0]
+	[RSP+3E0] 0x69               (size_t) [105]
+	[RSP+3E8] 0x23AC14790C8      (char*) "Q"
+	[RSP+3F0] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+3F8] 0x23A870943D8      (TESObjectCELL*)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+	[RSP+400] 0x7FF6ACFC22EA     (void* -> SkyrimSE.exe+06522EA	jmp 0x00007FF6ACFC2270)
+	[RSP+408] 0x0                (size_t) [0]
+	[RSP+410] 0x0                (size_t) [0]
+	[RSP+418] 0x3                (size_t) [3]
+	[RSP+420] 0x0                (size_t) [0]
+	[RSP+428] 0xD32137F930       (void*)
+	[RSP+430] 0x0                (size_t) [0]
+	[RSP+438] 0x0                (size_t) [0]
+	[RSP+440] 0x23A870943D8      (TESObjectCELL*)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+		File: "unofficial skyrim special edition patch.esp"
+		Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		EditorID: "HelgenExterior07"
+		FormID: 0x0000984A
+		FormType: Cell (60)
+	[RSP+448] 0xFFFFFFEB         (size_t) [4294967275]
+	[RSP+450] 0x7FF6AD0BCC28     (void* -> SkyrimSE.exe+074CC28	mov rbx, [rsp+0xB0])
+	[RSP+458] 0x69               (size_t) [105]
+	[RSP+460] 0x1                (size_t) [1]
+	[RSP+468] 0x23B58EA7D90      (TESWorldSpace*)
+		File: "Skyrim Unbound.esp"
+		Modified by: Skyrim.esm -> Update.esm -> Dawnguard.esm -> HearthFires.esm -> Dragonborn.esm -> ccbgssse001-fish.esm -> ccbgssse003-zombies.esl -> ccbgssse005-goldbrand.esl -> ccbgssse007-chrysamere.esl -> ccbgssse021-lordsmail.esl -> ccmtysse001-knightsofthenine.esl -> cctwbsse001-puzzledungeon.esm -> cceejsse001-hstead.esm -> ccqdrsse002-firewood.esl -> ccbgssse018-shadowrend.esl -> cceejsse002-tower.esl -> ccvsvsse002-pets.esl -> ccbgssse034-mntuni.esl -> ccbgssse045-hasedoki.esl -> ccbgssse008-wraithguard.esl -> ccbgssse036-petbwolf.esl -> ccffbsse001-imperialdragon.esl -> ccmtysse002-ve.esl -> ccbgssse043-crosselv.esl -> ccvsvsse001-winter.esl -> cceejsse003-hollow.esl -> ccbgssse016-umbra.esm -> ccbgssse031-advcyrus.esm -> ccbgssse038-bowofshadows.esl -> ccbgssse040-advobgobs.esl -> ccbgssse050-ba_daedric.esl -> ccbgssse052-ba_iron.esl -> ccbgssse058-ba_steel.esl -> ccbgssse059-ba_dragonplate.esl -> ccbgssse061-ba_dwarven.esl -> ccpewsse002-armsofchaos.esl -> ccedhsse002-splkntset.esl -> ccbgssse064-ba_elven.esl -> ccbgssse063-ba_ebony.esl -> ccbgssse062-ba_dwarvenmail.esl -> ccbgssse060-ba_dragonscale.esl -> ccbgssse056-ba_silver.esl -> ccbgssse053-ba_leather.esl -> ccbgssse051-ba_daedricmail.esl -> ccbgssse067-daedinv.esm -> ccvsvsse003-necroarts.esl -> ccvsvsse004-beafarmer.esl -> ccbgssse025-advdsgs.esm -> ccrmssse001-necrohouse.esl -> ccedhsse003-redguard.esl -> cceejsse004-hall.esl -> cceejsse005-cave.esm -> cckrtsse001_altar.esl -> ccafdsse001-dwesanctuary.esm -> unofficial skyrim special edition patch.esp -> waccf_armor and clothing extension.esp -> Wintersun - Faiths of Skyrim.esp -> Immersive Patrols II.esp -> the paarthurnax dilemma.esp -> Immersive Citizens - AI Overhaul.esp -> TheChoiceIsYours.esp -> Skyrim Unbound.esp
+		Flags: 0x0000000B kDestructible | kAltered | kInitialized
+		Name: "Skyrim"
+		EditorID: "Tamriel"
+		FormID: 0x0000003C
+		FormType: WorldSpace (71)
+		GetFullName: "Skyrim"
+	[RSP+470] 0x69               (size_t) [105]
+	[RSP+478] 0x23A87722C01      (void*)
+	[RSP+480] 0x69               (size_t) [105]
+	[RSP+488] 0x94CBA11700000003 (size_t) [uint: 10721840458041917443 int: -7724903615667634173]
+	[RSP+490] 0x23AFFFFFFEB      (size_t) [2452426325995]
+	[RSP+498] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+4A0] 0x0                (size_t) [0]
+	[RSP+4A8] 0xFFFFFFFF3D16A6B7 (size_t) [uint: 18446744070439478967 int: -3270072649]
+	[RSP+4B0] 0xC7A629EC467B7BEF (size_t) [uint: 14386232154453146607 int: -4060511919256405009]
+	[RSP+4B8] 0x7FF6461A0E5D     (size_t) [140695714795101]
+	[RSP+4C0] 0x0                (size_t) [0]
+	[RSP+4C8] 0x0                (size_t) [0]
+	[RSP+4D0] 0xFFFFFFFF         (size_t) [4294967295]
+	[RSP+4D8] 0x23A84052000      (BGSLocation*)
+		File: "Skyrim.esm"
+		Flags: 0x00000009 kDestructible | kInitialized
+		Name: "Helgen"
+		FormID: 0x00018A4A
+		FormType: Location (104)
+		GetFullName: "Helgen"
+	[RSP+4E0] 0x23AC1478900      (void*)
+	[RSP+4E8] 0x23ACBC2B168      (void*)
+	[RSP+4F0] 0x23ACBC2AB10      (PlayerCharacter*)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Flags: 0x00000408 
+		Name: "Adventurer"
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+		Object Reference: 
+		File: "Skyrim Unbound - Female by Default.esp"
+		Modified by: Skyrim.esm -> ccbgssse018-shadowrend.esl -> Skyrim Unbound.esp -> Skyrim Unbound - Female by Default.esp
+		Flags: 0x00040009 kDestructible | kInitialized
+		Name: "Adventurer"
+		FormID: 0x00000007
+		FormType: NPC (43)
+		ParentCell: ---
+			File: "unofficial skyrim special edition patch.esp"
+			Modified by: Skyrim.esm -> Update.esm -> unofficial skyrim special edition patch.esp
+			Flags: 0x00040009 
+			EditorID: "HelgenExterior07"
+			FormID: 0x0000984A
+			FormType: Cell (60)
+		Flags: 0x00000408 kInitialized
+		FormID: 0x00000014
+		FormType: ActorCharacter (62)
+	[RSP+4F8] 0xD32137F939       (void*)
+	[RSP+500] 0x7FF6AD0A0C36     (void* -> SkyrimSE.exe+0730C36	mov rdx, rdi)
+	[RSP+508] 0x0                (size_t) [0]
+	[RSP+510] 0xD32137F8C0       (void*)
+	[RSP+518] 0xD32137F920       (void*)
+	[RSP+520] 0x23ACBC20100      (void*)
+	[RSP+528] 0x1                (size_t) [1]
+	[RSP+530] 0x7FF6AFB00D20     (void* -> SkyrimSE.exe+3190D20	add [rax], al)
+	[RSP+538] 0x0                (size_t) [0]
+	[RSP+540] 0x1                (size_t) [1]
+	[RSP+548] 0x23A84052000      (BGSLocation*)
+		File: "Skyrim.esm"
+		Flags: 0x00000009 kDestructible | kInitialized
+		Name: "Helgen"
+		FormID: 0x00018A4A
+		FormType: Location (104)
+		GetFullName: "Helgen"
+	[RSP+550] 0x7FF6AD3403BC     (void* -> SkyrimSE.exe+09D03BC	nop)
+	[RSP+558] 0x0                (size_t) [0]
+	[RSP+560] 0x7FF89211C89F     (void* -> KERNELBASE.dll+004C89F	nop [rax+rax*1], eax)
+	[RSP+568] 0xD300000002       (size_t) [906238099458]
+	[RSP+570] 0x1                (size_t) [1]
+	[RSP+578] 0x2                (size_t) [2]
+	[RSP+580] 0x23AC1478960      (void*)
+	[RSP+588] 0x0                (size_t) [0]
+	[RSP+590] 0x0                (size_t) [0]
+	[RSP+598] 0x48               (size_t) [72]
+	[RSP+5A0] 0x1                (size_t) [1]
+	[RSP+5A8] 0x0                (size_t) [0]
+	[RSP+5B0] 0x7FF6AD917046     (void* -> SkyrimSE.exe+0FA7046	mov rdx, [rdi+0x28])
+	[RSP+5B8] 0x0                (size_t) [0]
+	[RSP+5C0] 0x3D16A6B7         (size_t) [1024894647]
+	[RSP+5C8] 0xC7A629EC467B7BEF (size_t) [uint: 14386232154453146607 int: -4060511919256405009]
+	[RSP+5D0] 0x7FF84619E65D     (size_t) [140704304719453]
+	[RSP+5D8] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+5E0] 0x7FF6AD9137DC     (void* -> SkyrimSE.exe+0FA37DC	mov rcx, [rsp+0x28])
+	[RSP+5E8] 0xA94646DB         (size_t) [2839955163]
+	[RSP+5F0] 0x0                (size_t) [0]
+	[RSP+5F8] 0x0                (size_t) [0]
+	[RSP+600] 0x0                (size_t) [0]
+	[RSP+608] 0x23AC76AEC60      (Main*)
+	[RSP+610] 0x400766           (void* -> XINPUT1_3.dll+0000766	add [rax], al)
+	[RSP+618] 0x0                (size_t) [0]
+	[RSP+620] 0x0                (size_t) [0]
+	[RSP+628] 0xD32137FA00       (void*)
+	[RSP+630] 0x7FF6ACFB5F13     (void* -> SkyrimSE.exe+0645F13	call 0x00007FF6ACFB9D40)
+	[RSP+638] 0x0                (size_t) [0]
+	[RSP+640] 0x400700           (void* -> XINPUT1_3.dll+0000700	add [rax], al)
+	[RSP+648] 0xD32137FA00       (void*)
+	[RSP+650] 0x23A00000000      (size_t) [2448131358720]
+	[RSP+658] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+660] 0xD32137FB50       (void*)
+	[RSP+668] 0x0                (size_t) [0]
+	[RSP+670] 0x7FF83EFB1A00     (void* -> gameoverlayrenderer64.dll+0151A00	add [rax], eax)
+	[RSP+678] 0x0                (size_t) [0]
+	[RSP+680] 0x7FF892698EEF     (void* -> USER32.dll+0008EEF	nop [rax+rax*1], eax)
+	[RSP+688] 0x7FF83EFB18D0     (CInputHandler*)
+	[RSP+690] 0x7FF83EEFDB7B     (void* -> gameoverlayrenderer64.dll+009DB7B	test al, al)
+	[RSP+698] 0x10               (size_t) [16]
+	[RSP+6A0] 0x200000002        (size_t) [8589934594]
+	[RSP+6A8] 0xD300000001       (size_t) [906238099457]
+	[RSP+6B0] 0xD300000003       (size_t) [906238099459]
+	[RSP+6B8] 0x23A00000024      (size_t) [2448131358756]
+	[RSP+6C0] 0x0                (size_t) [0]
+	[RSP+6C8] 0x0                (size_t) [0]
+	[RSP+6D0] 0xD32137FB50       (void*)
+	[RSP+6D8] 0x7FF83EFB18D0     (CInputHandler*)
+	[RSP+6E0] 0x7FF83EEFD9FB     (void* -> gameoverlayrenderer64.dll+009D9FB	nop)
+	[RSP+6E8] 0x23AC1BE3560      (void*)
+	[RSP+6F0] 0x7FF892698CB9     (void* -> USER32.dll+0008CB9	jmp 0x00007FF892698C71)
+	[RSP+6F8] 0x0                (size_t) [0]
+	[RSP+700] 0x0                (size_t) [0]
+	[RSP+708] 0x3                (size_t) [3]
+	[RSP+710] 0x7FF83EEF085A     (void* -> gameoverlayrenderer64.dll+009085A	test al, al)
+	[RSP+718] 0x1                (size_t) [1]
+	[RSP+720] 0x3                (size_t) [3]
+	[RSP+728] 0x1                (size_t) [1]
+	[RSP+730] 0x47C0             (size_t) [18368]
+	[RSP+738] 0x0                (size_t) [0]
+	[RSP+740] 0xD32137FB50       (void*)
+	[RSP+748] 0x0                (size_t) [0]
+	[RSP+750] 0x7FF83EEFE2A0     (void* -> gameoverlayrenderer64.dll+009E2A0	mov rbx, [rsp+0x40])
+	[RSP+758] 0x47C0             (size_t) [18368]
+	[RSP+760] 0xFFFFFFFFFFFFFFFE (size_t) [uint: 18446744073709551614 int: -2]
+	[RSP+768] 0x0                (size_t) [0]
+	[RSP+770] 0x0                (size_t) [0]
+	[RSP+778] 0x0                (size_t) [0]
+	[RSP+780] 0x0                (size_t) [0]
+	[RSP+788] 0x0                (size_t) [0]
+	[RSP+790] 0x7FF6ACFAEAD5     (void* -> SkyrimSE.exe+063EAD5	test bl, bl)
+	[RSP+798] 0x0                (size_t) [0]
+	[RSP+7A0] 0x0                (size_t) [0]
+	[RSP+7A8] 0x400766           (void* -> XINPUT1_3.dll+0000766	add [rax], al)
+	[RSP+7B0] 0x400766           (void* -> XINPUT1_3.dll+0000766	add [rax], al)
+	[RSP+7B8] 0x1                (size_t) [1]
+	[RSP+7C0] 0x0                (size_t) [0]
+	[RSP+7C8] 0x22               (size_t) [34]
+	[RSP+7D0] 0x7FF891C341FB     (void* -> ucrtbase.dll+00841FB	mov rax, [rsp+0x30])
+	[RSP+7D8] 0x23AC147BF83      (char*) """
+	[RSP+7E0] 0x0                (size_t) [0]
+	[RSP+7E8] 0x400766           (void* -> XINPUT1_3.dll+0000766	add [rax], al)
+	[RSP+7F0] 0x14FE             (size_t) [5374]
+	[RSP+7F8] 0x138911BC         (size_t) [327750076]
+	[RSP+800] 0x1                (size_t) [1]
+	[RSP+808] 0x3C01F0DD885      (size_t) [4123689605253]
+	[RSP+810] 0x21C              (size_t) [540]
+	[RSP+818] 0x0                (size_t) [0]
+	[RSP+820] 0x7FF6ADEABB8E     (void* -> SkyrimSE.exe+153BB8E	mov ebx, eax)
+	[RSP+828] 0xA                (size_t) [10]
+	[RSP+830] 0x0                (size_t) [0]
+	[RSP+838] 0x0                (size_t) [0]
+	[RSP+840] 0x0                (size_t) [0]
+	[RSP+848] 0x0                (size_t) [0]
+	[RSP+850] 0x0                (size_t) [0]
+	[RSP+858] 0x0                (size_t) [0]
+	[RSP+860] 0x7FF89347E8D7     (void* -> KERNEL32.DLL+002E8D7	mov ecx, eax)
+	[RSP+868] 0x0                (size_t) [0]
+	[RSP+870] 0x0                (size_t) [0]
+	[RSP+878] 0x0                (size_t) [0]
+	[RSP+880] 0x0                (size_t) [0]
+	[RSP+888] 0x0                (size_t) [0]
+	[RSP+890] 0x7FF8948BFBCC     (void* -> ntdll.dll+00DFBCC	jmp 0x00007FF8948BFBF6)
+	[RSP+898] 0x0                (size_t) [0]
+	[RSP+8A0] 0x0                (size_t) [0]
+	[RSP+8A8] 0x4F0FFFFFB30      (size_t) [5433133628208]
+	[RSP+8B0] 0x4D0FFFFFB30      (size_t) [5295694674736]
+	[RSP+8B8] 0x21               (size_t) [33]
+	[RSP+8C0] 0x7FF8921ED2E0     (void* -> KERNELBASE.dll+011D2E0	mov [rsp+0x10], rbx)
+	[RSP+8C8] 0xD32137E480       (void*)
+	[RSP+8D0] 0xD32137E480       (void*)
+	[RSP+8D8] 0x0                (size_t) [0]
+	[RSP+8E0] 0x0                (size_t) [0]
+	[RSP+8E8] 0x0                (size_t) [0]
+	[RSP+8F0] 0x0                (size_t) [0]
+	[RSP+8F8] 0x0                (size_t) [0]
+	[RSP+900] 0x0                (size_t) [0]
+	[RSP+908] 0x0                (size_t) [0]
+	[RSP+910] 0x0                (size_t) [0]
+	[RSP+918] 0x0                (size_t) [0]
+	[RSP+920] 0x0                (size_t) [0]
+	[RSP+928] 0x0                (size_t) [0]
+	[RSP+930] 0x0                (size_t) [0]
+	[RSP+938] 0x0                (size_t) [0]
+	[RSP+940] 0x0                (size_t) [0]
+	[RSP+948] 0x0                (size_t) [0]
+	[RSP+950] 0x0                (size_t) [0]
+	[RSP+958] 0x0                (size_t) [0]
+	[RSP+960] 0x0                (size_t) [0]
+	[RSP+968] 0x0                (size_t) [0]
+	[RSP+970] 0x0                (size_t) [0]
+	[RSP+978] 0x0                (size_t) [0]
+	[RSP+980] 0x0                (size_t) [0]
+	[RSP+988] 0x0                (size_t) [0]
+	[RSP+990] 0x0                (size_t) [0]
+	[RSP+998] 0x0                (size_t) [0]
+	[RSP+9A0] 0x0                (size_t) [0]
+	[RSP+9A8] 0x0                (size_t) [0]
+	[RSP+9B0] 0x0                (size_t) [0]
+	[RSP+9B8] 0x0                (size_t) [0]
+	[RSP+9C0] 0x0                (size_t) [0]
+	[RSP+9C8] 0x0                (size_t) [0]
+	[RSP+9D0] 0x0                (size_t) [0]
+	[RSP+9D8] 0x0                (size_t) [0]
+	[RSP+9E0] 0x0                (size_t) [0]
+	[RSP+9E8] 0x0                (size_t) [0]
+	[RSP+9F0] 0x0                (size_t) [0]
+	[RSP+9F8] 0x0                (size_t) [0]
+	[RSP+A00] 0x0                (size_t) [0]
+	[RSP+A08] 0x0                (size_t) [0]
+	[RSP+A10] 0x0                (size_t) [0]
+	[RSP+A18] 0x0                (size_t) [0]
+	[RSP+A20] 0x0                (size_t) [0]
+	[RSP+A28] 0x0                (size_t) [0]
+	[RSP+A30] 0x0                (size_t) [0]
+	[RSP+A38] 0x0                (size_t) [0]
+	[RSP+A40] 0x0                (size_t) [0]
+	[RSP+A48] 0x0                (size_t) [0]
+	[RSP+A50] 0x0                (size_t) [0]
+	[RSP+A58] 0x0                (size_t) [0]
+	[RSP+A60] 0x0                (size_t) [0]
+	[RSP+A68] 0x0                (size_t) [0]
+	[RSP+A70] 0x0                (size_t) [0]
+	[RSP+A78] 0x0                (size_t) [0]
+	[RSP+A80] 0x0                (size_t) [0]
+	[RSP+A88] 0x0                (size_t) [0]
+	[RSP+A90] 0x0                (size_t) [0]
+	[RSP+A98] 0x0                (size_t) [0]
+	[RSP+AA0] 0x0                (size_t) [0]
+	[RSP+AA8] 0x0                (size_t) [0]
+	[RSP+AB0] 0x0                (size_t) [0]
+	[RSP+AB8] 0x0                (size_t) [0]
+	[RSP+AC0] 0x0                (size_t) [0]
+	[RSP+AC8] 0x0                (size_t) [0]
+	[RSP+AD0] 0x0                (size_t) [0]
+	[RSP+AD8] 0x0                (size_t) [0]
+	[RSP+AE0] 0x0                (size_t) [0]
+	[RSP+AE8] 0x0                (size_t) [0]
+	[RSP+AF0] 0x0                (size_t) [0]
+	[RSP+AF8] 0x0                (size_t) [0]
+	[RSP+B00] 0x0                (size_t) [0]
+	[RSP+B08] 0x0                (size_t) [0]
+	[RSP+B10] 0x0                (size_t) [0]
+	[RSP+B18] 0x0                (size_t) [0]
+	[RSP+B20] 0x0                (size_t) [0]
+	[RSP+B28] 0x0                (size_t) [0]
+	[RSP+B30] 0x0                (size_t) [0]
+	[RSP+B38] 0x0                (size_t) [0]
+	[RSP+B40] 0x0                (size_t) [0]
+	[RSP+B48] 0x0                (size_t) [0]
+	[RSP+B50] 0x0                (size_t) [0]
+	[RSP+B58] 0x0                (size_t) [0]
+	[RSP+B60] 0x0                (size_t) [0]
+	[RSP+B68] 0x0                (size_t) [0]
+	[RSP+B70] 0x0                (size_t) [0]
+	[RSP+B78] 0x0                (size_t) [0]
+	[RSP+B80] 0x0                (size_t) [0]
+	[RSP+B88] 0x0                (size_t) [0]
+	[RSP+B90] 0x0                (size_t) [0]
+	[RSP+B98] 0x0                (size_t) [0]
+	[RSP+BA0] 0x0                (size_t) [0]
+	[RSP+BA8] 0x0                (size_t) [0]
+	[RSP+BB0] 0x0                (size_t) [0]
+	[RSP+BB8] 0x0                (size_t) [0]
+	[RSP+BC0] 0x0                (size_t) [0]
+	[RSP+BC8] 0x0                (size_t) [0]
+	[RSP+BD0] 0x0                (size_t) [0]
+	[RSP+BD8] 0x0                (size_t) [0]
+	[RSP+BE0] 0x0                (size_t) [0]
+	[RSP+BE8] 0x0                (size_t) [0]
+	[RSP+BF0] 0x0                (size_t) [0]
+	[RSP+BF8] 0x0                (size_t) [0]
+	[RSP+C00] 0x0                (size_t) [0]
+	[RSP+C08] 0x0                (size_t) [0]
+	[RSP+C10] 0x0                (size_t) [0]
+	[RSP+C18] 0x0                (size_t) [0]
+	[RSP+C20] 0x0                (size_t) [0]
+	[RSP+C28] 0x0                (size_t) [0]
+	[RSP+C30] 0x0                (size_t) [0]
+	[RSP+C38] 0x0                (size_t) [0]
+	[RSP+C40] 0x0                (size_t) [0]
+	[RSP+C48] 0x0                (size_t) [0]
+	[RSP+C50] 0x0                (size_t) [0]
+	[RSP+C58] 0x0                (size_t) [0]
+	[RSP+C60] 0x0                (size_t) [0]
+	[RSP+C68] 0x0                (size_t) [0]
+	[RSP+C70] 0x0                (size_t) [0]
+	[RSP+C78] 0x0                (size_t) [0]
+	[RSP+C80] 0x0                (size_t) [0]
+	[RSP+C88] 0x0                (size_t) [0]
+	[RSP+C90] 0x0                (size_t) [0]
+
+MODULES:
+	XINPUT1_3.dll                  0x000000400000
+	X3DAudio1_7.dll                0x000077730000
+	WINTRUST.dll                   0x023BE67F0000
+	SkyrimSE.exe                   0x7FF6AC970000
+	ResampleDmo.DLL                0x7FF83B5D0000
+	DSOUND.DLL                     0x7FF83D7B0000
+	gameoverlayrenderer64.dll      0x7FF83EE60000
+	CrashLogger.dll                0x7FF83F000000
+	trainwreck.dll                 0x7FF83F440000
+	SoundRecordDistributor.dll     0x7FF83F550000
+	PapyrusUtil.dll                0x7FF83F740000
+	d3dx9_42.dll                   0x7FF83F8B0000
+	XAudio2_7.dll                  0x7FF83FC20000
+	tier0_s64.dll                  0x7FF83FCB0000
+	skse64_1_6_1170.dll            0x7FF8408C0000
+	vstdlib_s64.dll                0x7FF845620000
+	CraftingCategories.dll         0x7FF846350000
+	BackportedESLSupport.dll       0x7FF84E580000
+	MSVCP140.dll                   0x7FF84EF70000
+	webio.dll                      0x7FF860AB0000
+	ncryptsslp.dll                 0x7FF860BB0000
+	bink2w64.dll                   0x7FF861570000
+	DINPUT8.dll                    0x7FF8615F0000
+	steam_api64.dll                0x7FF866710000
+	MSVCP140_ATOMIC_WAIT.dll       0x7FF87DF30000
+	OneCoreCommonProxyStub.dll     0x7FF87E7E0000
+	VCRUNTIME140.dll               0x7FF87F130000
+	MPR.dll                        0x7FF8801F0000
+	winmmbase.dll                  0x7FF881920000
+	inputhost.dll                  0x7FF882F40000
+	textinputframework.dll         0x7FF8831C0000
+	Windows.UI.dll                 0x7FF884360000
+	rasadhlp.dll                   0x7FF884990000
+	VCRUNTIME140_1.dll             0x7FF884B10000
+	AUDIOSES.DLL                   0x7FF885550000
+	OneCoreUAPCommonProxyStub.dll  0x7FF886570000
+	twinapi.appcore.dll            0x7FF886BC0000
+	D3DSCache.dll                  0x7FF886FD0000
+	amdihk64.dll                   0x7FF887040000
+	atidxx64.dll                   0x7FF887080000
+	atiuxp64.dll                   0x7FF888FB0000
+	dbghelp.dll                    0x7FF888FF0000
+	WINMM.dll                      0x7FF8894A0000
+	VERSION.dll                    0x7FF8894E0000
+	aticfx64.dll                   0x7FF8894F0000
+	CoreUIComponents.dll           0x7FF88A160000
+	avrt.dll                       0x7FF88A6E0000
+	fwpuclnt.dll                   0x7FF88A840000
+	wevtapi.dll                    0x7FF88AD10000
+	WINHTTP.dll                    0x7FF88B0A0000
+	msdmo.dll                      0x7FF88BCF0000
+	Microsoft.Internal.WarpPal.dll 0x7FF88BDB0000
+	MMDevApi.dll                   0x7FF88C0D0000
+	d3d11.dll                      0x7FF88C7B0000
+	dcomp.dll                      0x7FF88CA10000
+	CoreMessaging.dll              0x7FF88D0B0000
+	apphelp.dll                    0x7FF88D720000
+	Secur32.dll                    0x7FF88D8B0000
+	wintypes.dll                   0x7FF88DC50000
+	uxtheme.dll                    0x7FF88EEF0000
+	WINNSI.DLL                     0x7FF88F020000
+	directxdatabasehelper.dll      0x7FF88F040000
+	dxcore.dll                     0x7FF88F0C0000
+	dxgi.dll                       0x7FF88F110000
+	dwmapi.dll                     0x7FF88F280000
+	resourcepolicyclient.dll       0x7FF88F600000
+	windows.storage.dll            0x7FF88F900000
+	HID.DLL                        0x7FF890140000
+	IPHLPAPI.DLL                   0x7FF890430000
+	DNSAPI.dll                     0x7FF8904C0000
+	schannel.DLL                   0x7FF890830000
+	kernel.appcore.dll             0x7FF8909F0000
+	SSPICLI.DLL                    0x7FF890C90000
+	MSWSOCK.dll                    0x7FF890EF0000
+	USERENV.dll                    0x7FF890F90000
+	CRYPTBASE.DLL                  0x7FF8911B0000
+	MSASN1.dll                     0x7FF891200000
+	NTASN1.dll                     0x7FF8913B0000
+	ncrypt.dll                     0x7FF891400000
+	bcrypt.dll                     0x7FF891440000
+	UMPDC.dll                      0x7FF891590000
+	CFGMGR32.dll                   0x7FF8917B0000
+	DEVOBJ.dll                     0x7FF891820000
+	powrprof.dll                   0x7FF891850000
+	DPAPI.DLL                      0x7FF8918D0000
+	profapi.dll                    0x7FF891AC0000
+	ucrtbase.dll                   0x7FF891BB0000
+	msvcp_win.dll                  0x7FF891DC0000
+	bcryptPrimitives.dll           0x7FF891E70000
+	gdi32full.dll                  0x7FF891FA0000
+	KERNELBASE.dll                 0x7FF8920D0000
+	win32u.dll                     0x7FF892490000
+	CRYPT32.dll                    0x7FF8924C0000
+	USER32.dll                     0x7FF892690000
+	clbcatq.dll                    0x7FF892870000
+	SHELL32.dll                    0x7FF892920000
+	shlwapi.dll                    0x7FF893030000
+	GDI32.dll                      0x7FF893090000
+	combase.dll                    0x7FF8930C0000
+	KERNEL32.DLL                   0x7FF893450000
+	WS2_32.dll                     0x7FF893520000
+	ADVAPI32.dll                   0x7FF8935C0000
+	ole32.dll                      0x7FF893680000
+	NSI.dll                        0x7FF8939F0000
+	MSCTF.dll                      0x7FF893A00000
+	imagehlp.dll                   0x7FF893BF0000
+	SHCORE.dll                     0x7FF893C20000
+	SETUPAPI.dll                   0x7FF893D80000
+	sechost.dll                    0x7FF894300000
+	msvcrt.dll                     0x7FF894440000
+	RPCRT4.dll                     0x7FF8944F0000
+	PSAPI.DLL                      0x7FF894610000
+	OLEAUT32.dll                   0x7FF894680000
+	IMM32.DLL                      0x7FF894760000
+	ntdll.dll                      0x7FF8947E0000
+	steamclient64.dll              0x7FFFFD660000
+
+SKSE PLUGINS:
+	BackportedESLSupport.dll
+	CraftingCategories.dll v1.1.1
+	CrashLogger.dll v1.15
+	PapyrusUtil.dll
+	SoundRecordDistributor.dll v1.5
+	trainwreck.dll
+
+PLUGINS:
+	Light: 97	Regular: 35	Total: 132
+	[ 0]     Skyrim.esm
+	[ 1]     Update.esm
+	[ 2]     Dawnguard.esm
+	[ 3]     HearthFires.esm
+	[ 4]     Dragonborn.esm
+	[ 5]     ccasvsse001-almsivi.esm
+	[ 6]     ccbgssse001-fish.esm
+	[ 7]     cctwbsse001-puzzledungeon.esm
+	[ 8]     cceejsse001-hstead.esm
+	[ 9]     ccbgssse016-umbra.esm
+	[ A]     ccbgssse031-advcyrus.esm
+	[ B]     ccbgssse067-daedinv.esm
+	[ C]     ccbgssse025-advdsgs.esm
+	[ D]     cceejsse005-cave.esm
+	[ E]     ccafdsse001-dwesanctuary.esm
+	[ F]     unofficial skyrim special edition patch.esp
+	[10]     SkyUI_SE.esp
+	[11]     Relationship Dialogue Overhaul.esp
+	[12]     Weapons Armor Clothing & Clutter Fixes.esp
+	[13]     Awesome Artifacts.esp
+	[14]     Unique Uniques.esp
+	[15]     waccf_armor and clothing extension.esp
+	[16]     NoBSAIProjectileDodge.esp
+	[17]     Wintersun - Faiths of Skyrim.esp
+	[18]     Immersive Patrols II.esp
+	[19]     PrvtIRoyalArmory.esp
+	[1A]     ThaneWeaponsReborn.esp
+	[1B]     the paarthurnax dilemma.esp
+	[1C]     run for your lives.esp
+	[1D]     Mannaz - Integrated Races of Skyrim.esp
+	[1E]     Freyr - Integrated Standing Stones of Skyrim.esp
+	[1F]     Immersive Citizens - AI Overhaul.esp
+	[20]     TheChoiceIsYours.esp
+	[21]     Vokrii - Minimalistic Perks of Skyrim.esp
+	[22]     Skyrim Unbound.esp
+	[FE:  0] ccbgssse002-exoticarrows.esl
+	[FE:  1] ccbgssse003-zombies.esl
+	[FE:  2] ccbgssse004-ruinsedge.esl
+	[FE:  3] ccbgssse005-goldbrand.esl
+	[FE:  4] ccbgssse006-stendarshammer.esl
+	[FE:  5] ccbgssse007-chrysamere.esl
+	[FE:  6] ccbgssse010-petdwarvenarmoredmudcrab.esl
+	[FE:  7] ccbgssse011-hrsarmrelvn.esl
+	[FE:  8] ccbgssse012-hrsarmrstl.esl
+	[FE:  9] ccbgssse014-spellpack01.esl
+	[FE:  A] ccbgssse019-staffofsheogorath.esl
+	[FE:  B] ccbgssse020-graycowl.esl
+	[FE:  C] ccbgssse021-lordsmail.esl
+	[FE:  D] ccmtysse001-knightsofthenine.esl
+	[FE:  E] ccqdrsse001-survivalmode.esl
+	[FE:  F] ccqdrsse002-firewood.esl
+	[FE: 10] ccbgssse018-shadowrend.esl
+	[FE: 11] ccbgssse035-petnhound.esl
+	[FE: 12] ccfsvsse001-backpacks.esl
+	[FE: 13] cceejsse002-tower.esl
+	[FE: 14] ccedhsse001-norjewel.esl
+	[FE: 15] ccvsvsse002-pets.esl
+	[FE: 16] ccbgssse037-curios.esl
+	[FE: 17] ccbgssse034-mntuni.esl
+	[FE: 18] ccbgssse045-hasedoki.esl
+	[FE: 19] ccbgssse008-wraithguard.esl
+	[FE: 1A] ccbgssse036-petbwolf.esl
+	[FE: 1B] ccffbsse001-imperialdragon.esl
+	[FE: 1C] ccmtysse002-ve.esl
+	[FE: 1D] ccbgssse043-crosselv.esl
+	[FE: 1E] ccvsvsse001-winter.esl
+	[FE: 1F] cceejsse003-hollow.esl
+	[FE: 20] ccbgssse038-bowofshadows.esl
+	[FE: 21] ccbgssse040-advobgobs.esl
+	[FE: 22] ccbgssse050-ba_daedric.esl
+	[FE: 23] ccbgssse052-ba_iron.esl
+	[FE: 24] ccbgssse054-ba_orcish.esl
+	[FE: 25] ccbgssse058-ba_steel.esl
+	[FE: 26] ccbgssse059-ba_dragonplate.esl
+	[FE: 27] ccbgssse061-ba_dwarven.esl
+	[FE: 28] ccpewsse002-armsofchaos.esl
+	[FE: 29] ccbgssse041-netchleather.esl
+	[FE: 2A] ccedhsse002-splkntset.esl
+	[FE: 2B] ccbgssse064-ba_elven.esl
+	[FE: 2C] ccbgssse063-ba_ebony.esl
+	[FE: 2D] ccbgssse062-ba_dwarvenmail.esl
+	[FE: 2E] ccbgssse060-ba_dragonscale.esl
+	[FE: 2F] ccbgssse056-ba_silver.esl
+	[FE: 30] ccbgssse055-ba_orcishscaled.esl
+	[FE: 31] ccbgssse053-ba_leather.esl
+	[FE: 32] ccbgssse051-ba_daedricmail.esl
+	[FE: 33] ccbgssse057-ba_stalhrim.esl
+	[FE: 34] ccbgssse066-staves.esl
+	[FE: 35] ccbgssse068-bloodfall.esl
+	[FE: 36] ccbgssse069-contest.esl
+	[FE: 37] ccvsvsse003-necroarts.esl
+	[FE: 38] ccvsvsse004-beafarmer.esl
+	[FE: 39] ccffbsse002-crossbowpack.esl
+	[FE: 3A] ccbgssse013-dawnfang.esl
+	[FE: 3B] ccrmssse001-necrohouse.esl
+	[FE: 3C] ccedhsse003-redguard.esl
+	[FE: 3D] cceejsse004-hall.esl
+	[FE: 3E] cckrtsse001_altar.esl
+	[FE: 3F] cccbhsse001-gaunt.esl
+	[FE: 40] _ResourcePack.esl
+	[FE: 41] Guard Dialogue Overhaul.esp
+	[FE: 42] CC-FearsomeFists_WACCF_Patch.esp
+	[FE: 43] CC-Fishing_WACCF_Patch.esp
+	[FE: 44] CC-NecromanticGrimoire_WACCF_Patch.esp
+	[FE: 45] Unique Uniques_WACCF_Patch.esp
+	[FE: 46] WACCF_Survival Mode_Patch.esp
+	[FE: 47] Additional Dremora Faces.esp
+	[FE: 48] Dremora Lines Expansion.esp
+	[FE: 49] Falmer Servant Lines Expansion.esp
+	[FE: 4A] Civil War Lines Expansion.esp
+	[FE: 4B] Vampire Lines Expansion.esp
+	[FE: 4C] Bandit Lines Expansion.esp
+	[FE: 4D] CBBE.esp
+	[FE: 4E] CC-Bittercup_TCIY_Patch.esp
+	[FE: 4F] CC-BloodchillManor_TCIY_Patch.esp
+	[FE: 50] CC-BoneWolf_TCIY_Patch.esp
+	[FE: 51] CC-DeadMansDread_TCIY_Patch.esp
+	[FE: 52] CC-HeadmansCleaver_TCIY_Patch.esp
+	[FE: 53] CC-Hendraheim_TCIY_Patch.esp
+	[FE: 54] CC-LordsMail_TCIY_Patch.esp
+	[FE: 55] CC-PlagueOfTheDead_TCIY_Patch.esp
+	[FE: 56] CC-Saints&Seducers_TCIY_Patch.esp
+	[FE: 57] CC-TheContest_TCIY_Patch.esp
+	[FE: 58] CC-VigilEnforcer_TCIY_Patch.esp
+	[FE: 59] TCIY_Wintersun_Patch.esp
+	[FE: 5A] cc-staffofsheogorath_tciy_patch.esp
+	[FE: 5B] cc-sunder&wraithguard_tciy_patch.esp
+	[FE: 5C] Vokrii - WACCF Patch.esp
+	[FE: 5D] Skyrim Unbound - Female by Default.esp
+	[FE: 5E] Skyrim Unbound - GDO Patch.esp
+	[FE: 5F] Skyrim Unbound - RDO Patch.esp
+	[FE: 60] Skyrim Unbound - Immersive Citizens Patch.esp
